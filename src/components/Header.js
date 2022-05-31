@@ -12,12 +12,18 @@ const Header = () => {
 			alignItems='center'
 			xs={12}
 		>
-			<Typography variant='h3'>Dio Shopping</Typography>
+			<Typography variant='h4'>
+				<span class='material-icons'>set_meal</span>Marcoshop Aquarinator
+			</Typography>
 			<Link to='/'>
-				<Button color='primary'>Home</Button>
+				<Button color='primary'>
+					<span class='material-icons'>home</span>Home
+				</Button>
 			</Link>
 			<Link to='/contato'>
-				<Button color='primary'>Contato</Button>
+				<Button color='primary'>
+					<span class='material-icons'>email</span>Contato
+				</Button>
 			</Link>
 			<Cart />
 		</Grid>

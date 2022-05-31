@@ -55,7 +55,7 @@ const Contatos = () => {
 			<Grid container direction='row' xs={12}>
 				<TextField
 					id='name'
-					label='Name'
+					label='Nome'
 					value={author}
 					onChange={(event) => {
 						setAuthor(event.target.value);
@@ -64,7 +64,7 @@ const Contatos = () => {
 				/>
 				<TextField
 					id='message'
-					label='Message'
+					label='Mensagem'
 					value={content}
 					onChange={(event) => {
 						setContent(event.target.value);
@@ -103,7 +103,7 @@ const Contatos = () => {
 				variant='contained'
 				color='primary'
 			>
-				Sent
+				Enviar
 			</Button>
 
 			{message.map((content) => {

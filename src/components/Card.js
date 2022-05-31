@@ -26,7 +26,7 @@ const Card = ({ product, children }) => {
 			<Paper className={classes.paper}>
 				<Grid container direction='column'>
 					<Grid item>
-						<img width='140px' src={product.image} alt={product.name_product} />
+						<img width='80px' src={product.image} alt={product.name_product} />
 						<Typography variant='h6'>{children}</Typography>
 						<Typography variant='subtitle1'>
 							R$ {product.price.toFixed(2)}
@@ -35,6 +35,7 @@ const Card = ({ product, children }) => {
 
 					<Button
 						variant='contained'
+						color='success'
 						onClick={() => dispatch(cartActions.Add(cart, product))}
 					>
 						Adicionar

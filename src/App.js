@@ -6,7 +6,7 @@ import { Container } from '@material-ui/core/';
 import Header from './components/Header';
 
 const App = () => {
-	const localCart = JSON.parse(localStorage.getItem('dioshopping: cart'));
+	const localCart = JSON.parse(localStorage.getItem('marcoshop: cart'));
 
 	if (localCart !== null) {
 		store.dispatch({ type: 'CHANGE_CART', localCart });
@@ -16,7 +16,7 @@ const App = () => {
 		<Provider store={store}>
 			<Container maxWidth='xl'>
 				<Router>
-					<Header />
+					<Header /> {/* makes the header render on every page in the routes */}
 					<Routes />
 				</Router>
 			</Container>
